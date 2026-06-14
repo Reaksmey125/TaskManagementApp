@@ -7,8 +7,6 @@ import android.os.Looper;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
-
     private static final int SPLASH_TIME_OUT = 3000;
 
     @Override
@@ -16,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // ប្រើប្រាស់ Handler ដើម្បីរង់ចាំ ៣ វិនាទី រួចប្តូរទៅកាន់ផ្ទាំង SettingsActivity ស្វ័យប្រវត្តិ
+        // ប្រើប្រាស់ Handler ដើម្បីរង់ចាំ ៣ វិនាទី រួចប្តូរទៅកាន់ផ្ទាំង HomeActivity ស្វ័យប្រវត្តិ
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
